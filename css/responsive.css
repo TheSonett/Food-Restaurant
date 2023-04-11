@@ -1,0 +1,78 @@
+/**
+                                    CREATED ON 31/03/2023 BY JOY SAHA
+
+    Author: JOY SAHA
+    Github: https://github.com/TheSonett
+    Website live On: 
+
+**/
+
+:root {
+    --purple: #8936f7;
+    --white-bg: #fff;
+    --header-text-color: #666;
+    --home-content-title-color: #333;
+    --home-content-color: #666;
+}
+
+@media(max-width: 970px) {
+    html {
+        font-size: 55%;
+    }
+
+    header {
+        padding: 2rem;
+    }
+
+    section {
+        padding: 2rem;
+    }
+}
+
+@media(max-width: 750px) {
+    #menu-bar {
+        display: initial;
+    }
+
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: var(--white-bg);
+        border-top: .1rem solid rgba(0, 0, 0, 0.1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    header .navbar a {
+        display: block;
+        margin: 1.5rem;
+        padding: 1.5rem;
+        background: var(--white-bg);
+        border: .2rem solid rgba(0, 0, 0, 0.1);
+        border-left: .5rem solid var(--purple);
+        transition: all .6s ease-out;
+    }
+
+    header .navbar a:hover {
+        background: var(--purple);
+        color: var(--white-bg);
+    }
+
+}
+
+@media(max-width: 450px) {
+    .order .row form .inputBox input {
+        width: 100%;
+    }
+}
+
+@media(max-width: 400px) {
+    html {
+        font-size: 50%;
+    }
+}
