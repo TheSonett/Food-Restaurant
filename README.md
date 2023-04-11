@@ -1,4 +1,4 @@
-# Food Restaurant Website
+# Full Responsive Food Restaurant Website
 I used pure HTML, CSS &amp; Javascript to build this project. It can change to dark mode as well.
 
 ## Screenshots
